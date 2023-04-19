@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="Assignment2.css" />
+    <title>Assignment-2</title>
+</head>
+
+<body>
+    <div class="a1">
+        <h1>Contact us!</h1>
+
+        <div class="flex-container">
+            <div class="b1">
+                <button class="fa fa-envelope">
+                    &nbsp; &nbsp;&nbsp;Send a Message
+                </button>
+            </div>
+
+            <div class="inp">
+                <input type="email" name="Email" id="email" placeholder="Email" />
+                <span id="email-error"></span>
+                <input type="phone" name="phone" id="phone" placeholder="Phone Number" />
+                <span id="phone-error"></span>
+                <input type="text" name="text" id="company" placeholder="Company" />
+                <span id="company-error"></span>
+                <textarea name="textarea" id="textarea" cols="45" rows="10" placeholder="Please tell us how can we help you?"></textarea>
+                <span id="textarea-error"></span>
+            </div>
+        </div>
+        <div class="b2">
+            <button type="button" id="button" onclick="return validation()">
+                Submit
+            </button><br><br>
+            <span id="error"></span>
+        </div>
+    </div>
+
+    <div class="a2">
+        <h2>Store Data</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Company</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td id = "em"></td>
+    <td id = "ph"></td>
+    <td id = "cm"></td>
+    <td id = "dt"></td>
+  </tr>
+</table>
+
+    </div>
+</body>
+</html>
